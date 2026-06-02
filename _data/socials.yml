@@ -1,5 +1,6 @@
 # Social links shown on the about (home) page, in the order defined here.
 # See https://github.com/george-gca/jekyll-socials for all supported fields.
+email: valentin.dorseuil@ens.psl.eu
 github_username: vdorseuil # your GitHub username -> https://github.com/<username>
 linkedin_username: valentin-dorseuil # your LinkedIn vanity name -> https://www.linkedin.com/in/<username>
 scholar_userid: z-Bkm94AAAAJ # your Google Scholar ID (the value after "user=" in your Scholar URL)

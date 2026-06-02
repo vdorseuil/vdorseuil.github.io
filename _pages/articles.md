@@ -9,6 +9,9 @@ nav_order: 2
 {% assign me = "Valentin Dorseuil" %}{% comment %} your name as it appears in the authors list — highlighted in blue {% endcomment %}
 
 <div class="post articles">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+    </header>
   <ul class="article-list">
     {% for post in site.posts %}
       <li class="article-entry">

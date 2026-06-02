@@ -6,9 +6,9 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Valentin
 middle_name:
 last_name: Dorseuil
-email: valentin.dorseuil@ens.psl.eu # rendered bot-protected via the encode_email filter
-contact_note: >
-  The best way to contact me is by email.
+# email: valentin.dorseuil@ens.psl.eu # rendered bot-protected via the encode_email filter
+# contact_note: >
+  # The best way to contact me is by email.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal website of Valentin Dorseuil, PhD student at ENS-PSL working on Machine Learning, Differential Privacy and Membership Inference Attacks.
 footer_text: >
@@ -58,7 +58,7 @@ footer_fixed: true
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
-bib_search: true
+bib_search: false
 
 # Dimensions
 max_width: 930px
