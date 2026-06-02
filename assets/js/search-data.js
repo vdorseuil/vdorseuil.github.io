@@ -44,6 +44,13 @@ ninja.data = [{
           title: 'I am joining the Vector Institute in Toronto for a research internship with...',
           description: "",
           section: "News",},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%76%61%6C%65%6E%74%69%6E.%64%6F%72%73%65%75%69%6C@%65%6E%73.%70%73%6C.%65%75", "_blank");
+        },
+      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
