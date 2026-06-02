@@ -9,6 +9,7 @@ profile:
   image: valentin.jpg
   image_circular: false
 
+
 # Home-page sections
 announcements:
   enabled: true # shows a preview of your latest news
