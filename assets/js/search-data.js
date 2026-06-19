@@ -40,8 +40,8 @@ ninja.data = [{
           section: "News",},{id: "news-we-submitted-our-paper-assessing-per-sample-membership-inference-vulnerability-without-retraining-to-neurips-2026-read-the-preprint-here",
           title: 'We submitted our paper Assessing Per-Sample Membership Inference Vulnerability without Retraining to NeurIPS...',
           description: "",
-          section: "News",},{id: "news-i-am-joining-the-vector-institute-in-toronto-for-as-a-visiting-phd-student-with-nicolas-papernot-in-the-clever-hans-lab-canada",
-          title: 'I am joining the Vector Institute in Toronto for as a Visiting PhD...',
+          section: "News",},{id: "news-i-am-joining-the-vector-institute-in-toronto-as-a-visiting-phd-student-with-nicolas-papernot-in-the-clever-hans-lab-canada",
+          title: 'I am joining the Vector Institute in Toronto as a Visiting PhD Student...',
           description: "",
           section: "News",},{
         id: 'social-email',
