@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "About",
+    id: "nav-about-me",
+    title: "About me",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -16,12 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "nav-articles",
-          title: "Articles",
+        },{id: "nav-publications",
+          title: "Publications",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/articles/";
+            window.location.href = "/publications/";
           },
         },{id: "post-assessing-per-sample-membership-inference-vulnerability-without-retraining",
         
@@ -43,6 +43,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-am-joining-the-vector-institute-in-toronto-as-a-visiting-phd-student-with-nicolas-papernot-in-the-clever-hans-lab-canada",
           title: 'I am joining the Vector Institute in Toronto as a Visiting PhD Student...',
           description: "",
+          section: "News",},{id: "news-our-paper-assessing-per-sample-membership-inference-vulnerability-without-retraining-has-been-accepted-at-neurips-2026-it-s-available-here-see-you-in-paris",
+          title: 'Our paper, Assessing Per-Sample Membership Inference Vulnerability without Retraining, has been accepted at...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
@@ -62,7 +65,7 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/valentin-dorseuil", "_blank");
+          window.open("https://www.linkedin.com/in/vdorseuil", "_blank");
         },
       },{
         id: 'social-scholar',
