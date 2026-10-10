@@ -31,4 +31,10 @@ Before joining ENS, I graduated from [École Polytechnique](https://www.polytech
 
 <br>
 
-**Email:** [valentin.dorseuil@ens.psl.eu](mailto:valentin.dorseuil@ens.psl.eu) <span style="margin: 0 0.5rem; color: #888;">•</span> [GitHub](https://github.com) <span style="margin: 0 0.5rem; color: #888;">•</span> [Scholar](https://scholar.google.com/citations?user=z-Bkm94AAAAJ) <span style="margin: 0 0.5rem; color: #888;">•</span> [LinkedIn](https://linkedin.com/in/vdorseuil)
+**Email:**
+<script>
+  var user = 'valentin.dorseuil';
+  var domain = 'ens.psl.eu';
+  document.write('<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>');
+</script>
+<span style="margin: 0 0.5rem; color: #888;">•</span> [GitHub](https://github.com) <span style="margin: 0 0.5rem; color: #888;">•</span> [Scholar](https://scholar.google.com/citations?user=z-Bkm94AAAAJ) <span style="margin: 0 0.5rem; color: #888;">•</span> [LinkedIn](https://linkedin.com/in/vdorseuil)
