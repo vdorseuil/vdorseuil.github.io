@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
+    <h1 class="post-title" style="font-size: 2.5rem !important;">
       {% if site.title == 'blank' %}
         {{ site.first_name }} {{ site.middle_name }}
         {{ site.last_name }}
@@ -11,7 +11,7 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc" style="font-style: italic;">{{ page.subtitle }}</p>
   </header>
 
   <article>
@@ -40,12 +40,59 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
+    <!-- Clean Text Buttons -->
+    <style>
+      .clean-btn {
+        display: inline-block;
+        padding: 0.2rem 1rem;
+        margin-right: 0.5rem;
+        margin-top: 0rem;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: var(--global-theme-color) !important;
+        background-color: transparent;
+        border: 1.5px solid var(--global-theme-color);
+        border-radius: 5px; /* Gives it a slight, modern curve */
+        text-decoration: none !important;
+        transition: all 0.2s ease-in-out;
+      }
+      .clean-btn:hover {
+        background-color: var(--global-theme-color);
+        color: #ffffff !important; /* Text turns white on hover */
+      }
+    </style>
+
+
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2 style="font-size: 1.5rem; margin-top: 3rem; margin-bottom: 1rem;">
+  <a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected publications</a>
+</h2>
+      <div class="minimal-pubs">
+      {% include selected_papers.liquid %}
+      
+      <!-- Clean text link to the main publications page -->
+      <div style="margin-top: 1rem; text-align: right;"">
+        <a href="{{ '/publications/' | relative_url }}" style="font-weight: 300; font-style: italic; color: black; text-decoration: none;">
+          View all publications →
+        </a>
+      </div>
+    </div>
+
+    {% endif %}
+
+    <!-- Recent News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+       <h2 style="font-size: 1.5rem; margin-top: 3rem;">
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">Latest news</a>
       </h2>
       {% include news.liquid limit=true %}
+      <div style="margin-top: 1rem; text-align: right;"">
+        <a href="{{ '/news/' | relative_url }}" style="font-weight: 300; font-style: italic; color: black; text-decoration: none;">
+          View all news →
+        </a>
+      </div>
     {% endif %}
 
     <!-- Latest posts -->
@@ -56,13 +103,6 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
 
     <!-- Social -->
     {% if page.social %}

@@ -1,0 +1,7 @@
+"arXiv":
+  color: "#a3b8cc" # A pale, neutral gray
+  url: "https://arxiv.org"
+
+"Preprint":
+  color: "#9ac2e6" # A pale, neutral gray
+  url: "https://arxiv.org"

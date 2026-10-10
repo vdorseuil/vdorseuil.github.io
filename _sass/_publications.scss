@@ -5,7 +5,7 @@
 @use "variables" as v;
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -19,11 +19,11 @@
     margin-bottom: 1rem;
 
     span {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
-
   h2.bibliography {
+    display: none !important;
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
@@ -69,6 +69,7 @@
 
       .title {
         font-weight: bolder;
+        // color: var(--global-theme-color);
       }
 
       .author {
@@ -82,8 +83,10 @@
         }
 
         > em {
-          border-bottom: 1px solid;
-          font-style: normal;
+          border-bottom: none;
+        //   font-weight: bolder;
+          font-style: italic;
+          color: var(--global-theme-color);
         }
 
         > span.more-authors {

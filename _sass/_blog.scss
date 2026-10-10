@@ -34,6 +34,8 @@
 }
 
 .post-title {
+    font-size: 2rem !important;         /* Added to reduce title size */
+  margin-bottom: 0.5rem !important;   /* Added for spacing */
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }

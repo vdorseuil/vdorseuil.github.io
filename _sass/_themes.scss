@@ -6,12 +6,14 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{v.$white-color};
+//   --global-bg-color: #{v.$white-color};
+  --global-bg-color: #fafafa;
+  --global-code-bg-color: #{v.$code-bg-color-light};
   --global-code-bg-color: #{v.$code-bg-color-light};
   --global-text-color: #{v.$black-color};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #2563c9;
-  --global-hover-color: #2563c9;
+  --global-theme-color: #0d158c;
+  --global-hover-color: #0d158c;
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-dark};
   --global-footer-text-color: #{v.$grey-color-light};
