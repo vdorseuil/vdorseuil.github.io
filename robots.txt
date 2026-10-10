@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://vdorseuil.github.io/sitemap.xml
+Sitemap: https://valentindorseuil.com/sitemap.xml
