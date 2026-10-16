@@ -475,6 +475,28 @@ nav[data-toggle="toc"] {
     width: 100% !important;
     height: auto !important;
   }
+  @media (max-width: 768px) {
+    padding: 1.5rem !important;
+
+    .profile {
+      float: none !important;        // Annule le comportement flottant à droite
+      display: block !important;
+      margin: 0 auto 1.5rem auto !important; // Centre l'image et espace le texte en dessous
+      max-width: 220px !important;   // Ajuste la taille sur mobile (évite qu'elle soit trop petite)
+      width: 60% !important;
+
+      figure, img {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
+
+      .address {
+        text-align: center;
+        margin-top: 0.5rem;
+      }
+    }
+  }
 
   .clearfix {
     // Strips default bottom margin on the final paragraph/element in your bio
