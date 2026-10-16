@@ -3,25 +3,25 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about-me",
-    title: "About me",
+    id: "nav-about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-news",
-          title: "News",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/news/";
-          },
-        },{id: "nav-publications",
+  },{id: "nav-publications",
           title: "Publications",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-news",
+          title: "News",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
           },
         },{id: "post-assessing-per-sample-membership-inference-vulnerability-without-retraining",
         
@@ -34,17 +34,20 @@ ninja.data = [{
             window.location.href = "/articles/2026/per_sample/";
           
         },
-      },{id: "news-i-started-my-phd-in-the-data-team-at-ens-psl-working-on-differential-privacy-and-membership-inference-attacks-under-the-supervision-of-olivier-cappé-and-jamal-atif-mortar-board",
-          title: 'I started my PhD in the DATA Team at ENS-PSL, working on Differential...',
+      },{id: "news-phd-i-started-my-phd-in-the-data-team-at-ens-psl-working-on-differential-privacy-and-membership-inference-attacks-under-the-supervision-of-olivier-cappé-and-jamal-atif-mortar-board",
+          title: '[PhD] I started my PhD in the DATA Team at ENS-PSL, working on...',
           description: "",
-          section: "News",},{id: "news-our-new-preprint-assessing-per-sample-membership-inference-vulnerability-without-retraining-is-now-live-on-arxiv-the-paper-presents-an-efficient-approach-to-evaluate-per-sample-membership-inference-attack-mia-vulnerability-while-bypassing-the-overhead-of-retraining-shadow-models-check-it-out-here",
-          title: 'Our new preprint, Assessing Per-Sample Membership Inference Vulnerability without Retraining, is now live...',
+          section: "News",},{id: "news-preprint-our-new-preprint-assessing-per-sample-membership-inference-vulnerability-without-retraining-is-now-live-on-arxiv-the-paper-presents-an-efficient-approach-to-evaluate-per-sample-membership-inference-attack-mia-vulnerability-while-bypassing-the-overhead-of-retraining-shadow-models-check-it-out-here",
+          title: '[Preprint]: Our new preprint, Assessing Per-Sample Membership Inference Vulnerability without Retraining, is now...',
           description: "",
-          section: "News",},{id: "news-i-am-joining-the-vector-institute-in-toronto-as-a-visiting-phd-student-with-nicolas-papernot-in-the-clever-hans-lab-canada",
-          title: 'I am joining the Vector Institute in Toronto as a Visiting PhD Student...',
+          section: "News",},{id: "news-visit-i-am-joining-the-vector-institute-in-toronto-as-a-visiting-phd-student-with-nicolas-papernot-in-the-clever-hans-lab-canada",
+          title: '[Visit]: I am joining the Vector Institute in Toronto as a Visiting PhD...',
           description: "",
-          section: "News",},{id: "news-our-paper-assessing-per-sample-membership-inference-vulnerability-without-retraining-has-been-accepted-at-neurips-2026-it-s-available-here-see-you-in-paris",
-          title: 'Our paper, Assessing Per-Sample Membership Inference Vulnerability without Retraining, has been accepted at...',
+          section: "News",},{id: "news-paper-our-paper-assessing-per-sample-membership-inference-vulnerability-without-retraining-has-been-accepted-at-neurips-2026-it-s-available-here-see-you-in-paris",
+          title: '[Paper]: Our paper, Assessing Per-Sample Membership Inference Vulnerability without Retraining, has been accepted...',
+          description: "",
+          section: "News",},{id: "news-preprint-our-new-preprint-detectability-without-interference-efficient-canary-design-for-privacy-auditing-in-one-run-is-live-on-arxiv-it-frames-canary-optimization-as-a-bi-level-problem-and-introduces-ibis-a-framework-that-efficiently-crafts-multiple-canaries-for-privacy-audits-in-one-run-you-can-check-it-out-here",
+          title: '[Preprint]: Our new preprint, Detectability without Interference: Efficient Canary Design for Privacy Auditing...',
           description: "",
           section: "News",},{
         id: 'social-email',
