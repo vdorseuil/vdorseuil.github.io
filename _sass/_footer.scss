@@ -33,3 +33,49 @@ footer.sticky-bottom {
     text-align: center;
   }
 }
+
+// 1. Ensure the page spans at least full viewport height
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
+}
+
+// 2. Expand the main content wrapper to fill remaining vertical space
+.container.mt-5,
+main,
+body > .container {
+  flex: 1 0 auto;
+}
+
+// 3. Keep the footer minimal and push it to the true bottom
+footer {
+  flex-shrink: 0;
+  margin-top: auto !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border-top: none !important;
+  box-shadow: none !important;
+  padding: 2.5rem 0 1.5rem 0 !important;
+  text-align: center;
+
+  .container {
+    background: transparent !important;
+    border: none !important;
+    font-size: 0.85rem;
+    color: var(--global-text-color-light) !important;
+  }
+
+  a {
+    color: var(--global-text-color-light) !important;
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--global-theme-color) !important;
+    }
+  }
+}

@@ -2,85 +2,86 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title" style="font-size: 2.5rem !important;">
-      {% if site.title == 'blank' %}
-        {{ site.first_name }} {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc" style="font-style: italic;">{{ page.subtitle }}</p>
-  </header>
-
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+  <div class="about-card">
+    <header class="post-header">
+        <h1 class="post-title" style="font-size: 2.5rem !important;">
+        {% if site.title == 'blank' %}
+            {{ site.first_name }} {{ site.middle_name }}
+            {{ site.last_name }}
+        {% else %}
+            {{ site.title }}
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+        </h1>
+        <p class="desc" style="font-style: italic;">{{ page.subtitle }}</p>
+    </header>
+
+    <article>
+        {% if page.profile %}
+          <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}" style="max-width: 250px; width: 40%;">            {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1
+        rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+        30vw, 95vw"{% endcapture %}
+            {%
+                include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+                cache_bust=true
+            %}
+            {% endif %}
+            {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+            {% endif %}
+        </div>
         {% endif %}
-      </div>
-    {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+        <div class="clearfix">{{ content }}</div>
 
-    <!-- Clean Text Buttons -->
-    <style>
-      .clean-btn {
-        display: inline-block;
-        padding: 0.2rem 1rem;
-        margin-right: 0.5rem;
-        margin-top: 0rem;
-        font-size: 0.8rem;
-        font-weight: 400;
-        color: var(--global-theme-color) !important;
-        background-color: transparent;
-        border: 1.5px solid var(--global-theme-color);
-        border-radius: 5px; /* Gives it a slight, modern curve */
-        text-decoration: none !important;
-        transition: all 0.2s ease-in-out;
-      }
-      .clean-btn:hover {
-        background-color: var(--global-theme-color);
-        color: #ffffff !important; /* Text turns white on hover */
-      }
-    </style>
+        <!-- Clean Text Buttons -->
+        <style>
+        .clean-btn {
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            margin-right: 0.5rem;
+            margin-top: 0rem;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: var(--global-theme-color) !important;
+            background-color: transparent;
+            border: 1.5px solid var(--global-theme-color);
+            border-radius: 5px; /* Gives it a slight, modern curve */
+            text-decoration: none !important;
+            transition: all 0.2s ease-in-out;
+        }
+        .clean-btn:hover {
+            background-color: var(--global-theme-color);
+            color: #ffffff !important; /* Text turns white on hover */
+        }
+        </style>
+
+        </div>
 
 
+        <!-- Selected papers -->
+        {% if page.selected_papers %}
+        <h2 style="font-size: 1.5rem; margin-top: 3rem; margin-bottom: 1rem;">
+    <a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected publications</a>
+    </h2>
+        <div class="minimal-pubs">
+        {% include selected_papers.liquid %}
+        
+        <!-- Clean text link to the main publications page -->
+        <div style="margin-top: 1rem; text-align: right;"">
+            <a href="{{ '/publications/' | relative_url }}" style="font-weight: 300; font-style: italic; color: var(--global-text-color); text-decoration: none;">
+            View all publications →
+            </a>
+        </div>
+        </div>
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2 style="font-size: 1.5rem; margin-top: 3rem; margin-bottom: 1rem;">
-  <a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected publications</a>
-</h2>
-      <div class="minimal-pubs">
-      {% include selected_papers.liquid %}
-      
-      <!-- Clean text link to the main publications page -->
-      <div style="margin-top: 1rem; text-align: right;"">
-        <a href="{{ '/publications/' | relative_url }}" style="font-weight: 300; font-style: italic; color: black; text-decoration: none;">
-          View all publications →
-        </a>
-      </div>
-    </div>
-
-    {% endif %}
+        {% endif %}
 
     <!-- Recent News -->
     {% if page.announcements and page.announcements.enabled %}
@@ -89,7 +90,7 @@ layout: default
       </h2>
       {% include news.liquid limit=true %}
       <div style="margin-top: 1rem; text-align: right;"">
-        <a href="{{ '/news/' | relative_url }}" style="font-weight: 300; font-style: italic; color: black; text-decoration: none;">
+        <a href="{{ '/news/' | relative_url }}" style="font-weight: 300; font-style: italic; color: var(--global-text-color); text-decoration: none;">
           View all news →
         </a>
       </div>

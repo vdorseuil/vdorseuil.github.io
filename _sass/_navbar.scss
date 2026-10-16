@@ -8,6 +8,7 @@
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
+//   background-color: #3c48a8;
   opacity: 0.95;
 }
 
@@ -159,6 +160,7 @@
   padding: 0;
   border: 0;
   background-color: inherit;
+//   color: var(--global-text-color);
   color: var(--global-text-color);
   /* Fix footprint to prevent navbar shifting when icon changes */
   width: 2rem;
@@ -188,3 +190,15 @@
     color: var(--global-hover-color);
   }
 }
+.navbar-brand {
+  display: none!important;
+}
+
+// header .navbar {
+//   background-color: #eff1f3 !important;
+// }
+// Turn navigation links white for contrast
+// header .navbar .nav-link,
+// header .navbar .navbar-brand {
+//   color: #ffffff !important;
+// }

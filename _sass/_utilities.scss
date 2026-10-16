@@ -435,6 +435,62 @@ nav[data-toggle="toc"] {
 
 // Other utilities
 
+.news table th,
+.news table th[scope="row"] {
+  font-weight: 350 !important;
+  font-style: italic !important;
+}
+// .publications {
+//   background-color: var(--global-code-bg-color); // Gris discret natif d'al-folio (s'adapte au mode sombre)
+//   padding: 1.5rem;
+//   border-radius: 8px;
+//   margin-top: 1rem;
+//   margin-bottom: 2rem;
+// }
+
+// Grey card for About me (Title + Image + Bio)
+.about-card {
+  background-color: var(--global-code-bg-color);
+  padding: 2rem 2rem 1rem 2rem; // Reduced bottom padding from 2rem to 1rem
+  border-radius: 12px;
+  margin-bottom: 2rem;
+
+  .post-header {
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .profile {
+    margin-left: 2rem !important;
+    margin-right: 0.5rem !important;
+    margin-bottom: 0.5rem !important; // Reduced from 2rem
+    margin-top: 0 !important;
+
+    figure, img {
+      margin-bottom: 0 !important; // Strips default figure/img margin
+    }
+  }
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .clearfix {
+    // Strips default bottom margin on the final paragraph/element in your bio
+    > :last-child,
+    p:last-of-type {
+      margin-bottom: 0.5rem !important;
+    }
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
 .unloaded {
   display: none !important;
 }
