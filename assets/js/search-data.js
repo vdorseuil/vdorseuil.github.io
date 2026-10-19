@@ -23,18 +23,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "post-assessing-per-sample-membership-inference-vulnerability-without-retraining",
-        
-          title: "Assessing Per-Sample Membership Inference Vulnerability without Retraining",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/articles/2026/per_sample/";
-          
-        },
-      },{id: "news-phd-i-started-my-phd-in-the-data-team-at-ens-psl-working-on-differential-privacy-and-membership-inference-attacks-under-the-supervision-of-olivier-cappé-and-jamal-atif-mortar-board",
+        },{id: "news-phd-i-started-my-phd-in-the-data-team-at-ens-psl-working-on-differential-privacy-and-membership-inference-attacks-under-the-supervision-of-olivier-cappé-and-jamal-atif-mortar-board",
           title: '[PhD] I started my PhD in the DATA Team at ENS-PSL, working on...',
           description: "",
           section: "News",},{id: "news-preprint-our-new-preprint-assessing-per-sample-membership-inference-vulnerability-without-retraining-is-now-live-on-arxiv-the-paper-presents-an-efficient-approach-to-evaluate-per-sample-membership-inference-attack-mia-vulnerability-while-bypassing-the-overhead-of-retraining-shadow-models-check-it-out-here",
@@ -48,6 +37,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-preprint-our-new-preprint-detectability-without-interference-efficient-canary-design-for-privacy-auditing-in-one-run-is-live-on-arxiv-it-frames-canary-optimization-as-a-bi-level-problem-and-introduces-ibis-a-framework-that-efficiently-crafts-multiple-canaries-for-privacy-audits-in-one-run-you-can-check-it-out-here",
           title: '[Preprint]: Our new preprint, Detectability without Interference: Efficient Canary Design for Privacy Auditing...',
+          description: "",
+          section: "News",},{id: "news-preprint-we-released-our-latest-preprint-reliable-estimation-of-differential-privacy-under-selection-bias-on-arxiv-in-this-work-we-identify-and-fix-a-selection-bias-found-in-standard-privacy-auditing-protocols-read-the-full-paper-here",
+          title: '[Preprint]: We released our latest preprint, Reliable Estimation of Differential Privacy under Selection...',
           description: "",
           section: "News",},{
         id: 'social-email',
